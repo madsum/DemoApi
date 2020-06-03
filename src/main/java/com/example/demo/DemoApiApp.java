@@ -19,7 +19,7 @@ public class DemoApiApp {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedMethods("GET", "PUT", "POST", "PATCH", "DELETE", "OPTIONS")
-                        .allowedOrigins("*", "https://scoreboard-frontend.herokuapp.com/" );
+                        .allowedOrigins("*");
             }
         };
     }
