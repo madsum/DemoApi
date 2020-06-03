@@ -16,6 +16,14 @@ public class PlantRestController {
     @Autowired
     PlantService plantService;
 
+    /**
+     * This will get all plant details in JSON format within the given range from plantplaces.com
+     * in response with HTTP status code 200. If from or to blank it will fetch all data
+     * @since 03-06-2020
+     * @param from start range
+     * @param to end range
+     * @return
+     */
     @GetMapping("/getAllPlant")
     public List<Plant> getPlant(@RequestParam(required = false) String from,
                            @RequestParam(required = false) String to){
