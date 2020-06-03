@@ -22,7 +22,7 @@ public class ViewController {
   }
 
   @GetMapping("/getPlant")
-  public String getTest(ModelMap model,
+  public String getPlant(ModelMap model,
                         @RequestParam(required = false) String from,
                         @RequestParam(required = false) String to){
     List<Plant> plants =  plantService.getJsonObject(from, to);
